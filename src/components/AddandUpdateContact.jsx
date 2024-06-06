@@ -4,13 +4,13 @@ import { db } from '../config/firbase'
 import React from 'react'
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore'
 import { toast } from 'react-toastify'
-import * as Yup from "Yup";
+// import * as Yup from "Yup";
 
 
-const contactSchemeValidation = Yup.object().shape({
-    name:Yup.string().required("Name is Required"),
-    email:Yup.string().required("Email is Required")
-})
+// const contactSchemeValidation = Yup.object().shape({
+//     name:Yup.string().required("Name is Required"),
+//     email:Yup.string().required("Email is Required")
+// })
 
 
 const AddandUpdateContact = ({isOpen , onClose , isUpdate , contact}) => {
@@ -47,7 +47,7 @@ const AddandUpdateContact = ({isOpen , onClose , isUpdate , contact}) => {
         <Modal className="p-4" isOpen={isOpen} onClose={onClose}>
 
        <Formik 
-       validationSchema={contactSchemeValidation}
+    //    validationSchema={contactSchemeValidation}
        initialValues={
         isUpdate 
         ? {
