@@ -4,7 +4,7 @@ import { db } from '../config/firbase'
 import React from 'react'
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore'
 import { toast } from 'react-toastify'
-import * as Yup from "Yup";
+// import * as Yup from "Yup";
 
 
 const contactSchemeValidation = Yup.object().shape({
